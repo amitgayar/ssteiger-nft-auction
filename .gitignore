@@ -5,3 +5,9 @@ node_modules/*
 *.DS_Store
 
 .env
+
+scripts/*
+
+hardhat.config.js
+
+truffle.js

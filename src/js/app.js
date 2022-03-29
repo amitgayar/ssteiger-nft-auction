@@ -36,13 +36,13 @@ App = {
 
   initContracts: () => {
     console.log('initializing contracts')
-    $.getJSON('NumbersNFT.json', (contract) => {
+    $.getJSON('build/abis/NumbersNFT.json', (contract) => {
       // instantiate truffle-contract with contract data
       App.contracts.NumbersNFT = TruffleContract(contract)
       // set provider for contract
       App.contracts.NumbersNFT.setProvider(window.web3.currentProvider)
     })
-    $.getJSON('NFTDutchAuction.json', (contract) => {
+    $.getJSON('build/abis/NFTDutchAuction.json', (contract) => {
       // instantiate truffle-contract with contract data
       App.contracts.NFTDutchAuction = TruffleContract(contract)
       // set provider for contract
